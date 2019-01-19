@@ -104,23 +104,7 @@ a:hover            {  color: #004e56; }
 .bg-pink-pale      {  background-color: #f9e0fa; }
 
 
-.btn {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    -webkit-box-sizing: border-box;
-    background: none;
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
 
-    font-family: Graphik,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif;
-    font-size: .9375rem;
-    font-weight: 600;
-    padding: 1.25rem 2.5rem;
-    transition: all .15s linear;
-}
 
 .btn-square {
 
