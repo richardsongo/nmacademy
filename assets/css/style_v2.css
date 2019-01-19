@@ -2,18 +2,15 @@ body, .text--body-base, .kss-example-preview-wrapper {
     font-size: 16px;
     line-height: 1.88;
     font-family: "Merriweather",serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
-    color: #333;
     color: #403b3b;
     -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.1;
-    font-family: 'Lato', sans-serif;
-    font-weight: 300;
     font-family: 'Englebert', sans-serif;
 }
 
@@ -292,13 +289,13 @@ font-family: 'Open Sans', sans-serif;
 
 
 .section-title, .text-gradient {
-    background: -webkit-linear-gradient(right, yellow, #e51300);
+  /*  background: -webkit-linear-gradient(right, yellow, #e51300);
     background: linear-gradient(right, yellow, #e51300);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Pacifico', cursive;
     font-family: 'Permanent Marker', cursive;
-    font-family: 'Englebert', sans-serif;
+    font-family: 'Englebert', sans-serif;*/
 }
 
 
