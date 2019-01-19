@@ -18,7 +18,6 @@
 
 
 <link href="https://fonts.googleapis.com/css?family=Englebert:300,400,700,800|Merriweather:300,400|Material+Icons:300,400,700,800" rel="stylesheet">
-<link type="text/css" rel="stylesheet" media="screen,projection" href="https://cdnjs.cloudflare.com/ajax/libs/materializ/0.100.2/css/materialize.min.css">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
@@ -27,9 +26,8 @@
 
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" />
 <link rel="stylesheet" type="text/css" href="/themes/NMA/assets/css/noisy-slick-theme.css" />
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
-
-
+ 
+    
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/fonts/slick.svg" />  
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/ajax-loader.gif" />
 
@@ -439,11 +437,68 @@ Children will go into the world with the necessary knowledge to problem solve an
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.min.js"></script>
 
-<script type="text/javascript" src="/assets/js/cbpAnimatedHeader.min.js"></script>
-<script type="text/javascript" src="/assets/js/classie.js"></script>
+<script type="text/javascript" src="/nmacademy/assets/js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="/nmacademy/assets/js/classie.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
+
+
+<script type="text/javascript">
+/*<![CDATA[*/
+var geocoder;
+var map;
+var address = "9093 King George Blvd, Surrey, British Columbia";
+
+function initialize() {
+  geocoder = new google.maps.Geocoder();
+  var latlng = new google.maps.LatLng(-34.397, 150.644);
+  var myOptions = {
+    zoom: 17,
+    center: latlng,
+    mapTypeControl: true,
+    mapTypeControlOptions: {
+      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+    },
+    navigationControl: true,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  if (geocoder) {
+    geocoder.geocode({
+      'address': address
+    }, function(results, status) {
+      if (status == google.maps.GeocoderStatus.OK) {
+        if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
+          map.setCenter(results[0].geometry.location);
+
+          var infowindow = new google.maps.InfoWindow({
+            content: '<b>' + address + '</b>',
+            size: new google.maps.Size(150, 50)
+          });
+
+          var marker = new google.maps.Marker({
+            position: results[0].geometry.location,
+            map: map,
+            title: address
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+            infowindow.open(map, marker);
+          });
+
+        } else {
+          alert("No results found");
+        }
+      } else {
+        alert("Geocode was not successful for the following reason: " + status);
+      }
+    });
+  }
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+/*]]>*/
+</script>
+
 
 
 <script>
@@ -647,58 +702,5 @@ $('.js-news-responsive').slick({
 
 
 
-<script type="text/javascript">
-/*<![CDATA[*/
-var geocoder;
-var map;
-var address = "9093 King George Blvd, Surrey, British Columbia";
-
-function initialize() {
-  geocoder = new google.maps.Geocoder();
-  var latlng = new google.maps.LatLng(-34.397, 150.644);
-  var myOptions = {
-    zoom: 17,
-    center: latlng,
-    mapTypeControl: true,
-    mapTypeControlOptions: {
-      style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
-    },
-    navigationControl: true,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-  };
-  map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-  if (geocoder) {
-    geocoder.geocode({
-      'address': address
-    }, function(results, status) {
-      if (status == google.maps.GeocoderStatus.OK) {
-        if (status != google.maps.GeocoderStatus.ZERO_RESULTS) {
-          map.setCenter(results[0].geometry.location);
-
-          var infowindow = new google.maps.InfoWindow({
-            content: '<b>' + address + '</b>',
-            size: new google.maps.Size(150, 50)
-          });
-
-          var marker = new google.maps.Marker({
-            position: results[0].geometry.location,
-            map: map,
-            title: address
-          });
-          google.maps.event.addListener(marker, 'click', function() {
-            infowindow.open(map, marker);
-          });
-
-        } else {
-          alert("No results found");
-        }
-      } else {
-        alert("Geocode was not successful for the following reason: " + status);
-      }
-    });
-  }
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-/*]]>*/
-</script></body>
+</body>
 </html>
