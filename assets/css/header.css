@@ -108,12 +108,12 @@ line-height: 64px;
 }
 
 .cbp-af-header ul li a {
-    color: #fff;
+    color: #403b3b;
     font-weight: 600;
 }
 
 .cbp-af-header ul li a:hover {
-    color: #ed6000;
+    color: #ed6000;color: #004e56;
 }
 
 /* Submenu */
