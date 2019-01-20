@@ -1,7 +1,7 @@
 body, .text--body-base, .kss-example-preview-wrapper {
     font-size: 16px;
     line-height: 1.88;
-    font-family: "Merriweather",serif;
+    /*font-family: "Merriweather",serif;*/
     font-weight: 400;
     color: #403b3b;
     -webkit-font-smoothing: antialiased;
