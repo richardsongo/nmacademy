@@ -111,21 +111,15 @@
 
 <form method="post" action="" class="js-registratio col s12" accept-charset="UTF-8">
 
-<input type="hidden" name="action" value="contactForm/sendMessage">
-<input type="hidden" name="fromName" value="Pre-registration posted from website">
-<input type="hidden" name="subject" value="Pre-registration posted from noisymonkeysacademy.com">
-<input type="hidden" name="message[body]" value="Pre-registration posted from noisymonkeysacademy.com">
-<input id="shameOnSpamers" name="shameOnSpamers" type="text">
-<input type="hidden" name="redirect" value="/thanks">
 
         <div class="row">
         <div class="col m8 s12 offset-m2">
 
-            <input type="hidden" name="CRAFT_CSRF_TOKEN" value="CK6yu_SJnr~oHUHfkebhF~tQFS4rWAXtsR1~zngL">
-
    
-<div class="form-section" style="background-color:#f2f2f2; padding:20px; margin-bottom:20px">
+<div class="form-section py-5">
+	
 <h4 class="orange-text text-darken-4">Parent/Guardian</h4>
+	
 <div class="form-section-body">
 
 
@@ -136,36 +130,34 @@
               <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
                 <label for="firstName" class="">First name</label>
-                <input id="firstName" type="text" name="message[Contact first name]" value="" class="validate" required="">
+                <input id="firstName" type="text" name="message[Contact first name]" value="" class="form-control validate" required="">
               </div>
 
               <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
                 <label for="lastName" class="">Last name</label>
-                <input id="lastName" type="text" name="message[Contact last name]" value="" class="validate" required="">
+                <input id="lastName" type="text" name="message[Contact last name]" value="" class="form-control validate" required="">
               </div>
 
             </div>
 
-            <div class=" row">
-              <div class="input-field col s12">
-                <i class="material-icons prefix">email</i>
-                <label for="fromEmail" data-error="wrong" data-success="right">Email</label>            
-                <input id="fromEmail" type="email" name="fromEmail" value="" class="validate" required="">
-              </div>
-            </div>
+
+		<div class="form-group">      
+			<i class="material-icons prefix">email</i>
+			<label for="fromEmail" data-error="wrong" data-success="right">Email</label>            
+			<input id="fromEmail" type="email" name="fromEmail" value="" class="validate" required="">
+              	</div>
 
 
-            <div class=" row">
-              <div class="input-field col s12">
+
+            <div class="form-group">
                 <i class="material-icons prefix">phone</i>
                 <label for="Phone" class="">Phone number</label>
                 <input class=" " type="tel" name="message[Phone number]" value="" id="Phone" required="">
-              </div>
             </div>
 
-            <div class=" row">
-              <div class="col s12">
+            <div class="form-group">
+		      
               <label class="">Relationship with child</label>
               
               <div class="select-wrapper input-large"><span class="caret">▼</span><input type="text" class="select-dropdown" readonly="true" data-activates="select-options-9557a7de-cc9a-f5c2-29e4-a0bca5a7fed9" value="Please select..."><ul id="select-options-9557a7de-cc9a-f5c2-29e4-a0bca5a7fed9" class="dropdown-content select-dropdown "><li class="disabled "><span>Please select...</span></li><li class=""><span>Mother</span></li><li class=""><span>Father</span></li><li class=""><span>GrandMother</span></li><li class=""><span>GrandFather</span></li><li class=""><span>Guardian</span></li></ul><select name="message[Relationship][]" id="relationship" class="input-large initialized" required="" data-select-id="9557a7de-cc9a-f5c2-29e4-a0bca5a7fed9">
@@ -176,7 +168,6 @@
                 <option value="GrandFather">GrandFather</option>
                 <option value="Guardian">Guardian</option>
               </select></div>
-              </div>
             </div>
 
 <input type="hidden" name="message[---]" value="-----------------------------------------------">
