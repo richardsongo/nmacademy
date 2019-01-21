@@ -408,7 +408,7 @@ Children will go into the world with the necessary knowledge to problem solve an
             <p class="lead">Ready to enroll your child? Click the button below to start the admission process.</p>
 
 
-<a class="btn-lg btn btn-primary" href="#" data-toggle="modal" data-load-url="/registration.html" data-target="#myModal">
+<a class="btn-lg btn btn-primary" href="#" data-toggle="modal" data-load-url="/registration.html" data-target="#myReg">
   Start an application
 </a>
 
@@ -473,8 +473,15 @@ Children will go into the world with the necessary knowledge to problem solve an
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.0.1/lazysizes.min.js"></script>
 
-
 <script type="text/javascript">
+
+$('#myReg').on('show.bs.modal', function (e) {
+    var loadurl = $(e.relatedTarget).data('load-url');
+    $(this).find('.modal-body').load(loadurl);
+});
+
+
+
 $('.parallax-window').parallax({
     naturalWidth: 600,
     naturalHeight: 400
