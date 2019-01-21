@@ -13,11 +13,6 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Raleway', sans-serif;
 }
 
-.cbp-af-header .nav-item {
-    font-family: 'Raleway', sans-serif; 
-    font-weight: 300;
-}
-
 .section-title {
      color: #241c15;
     font-family: 'Raleway', sans-serif;
@@ -27,6 +22,23 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 
 }
+
+
+@media (max-width: 767px){
+.h1, .h2, h1, h2,.section-title  {
+    font-size: 3.5rem;
+    font-weight: 200;
+    line-height: 1.125;
+    }}
+
+
+
+.cbp-af-header .nav-item {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 300;
+}
+
+
 
 
 .margin-top74 {margin-top:56px;}
