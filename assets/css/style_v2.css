@@ -88,9 +88,9 @@ h1, h2, h3, h4, h5, h6 {
 /* Hero */
 
 .hero-fp  { min-height:100%;  }   /* full page*/
-.hero-s   { min-height:320px; }   /* small */
-.hero-m   { min-height:406px; }   /* medium */
-.hero-l   { min-height:655px; }   /* large */
+.hero-s, hero-sm   { min-height:320px; }   /* small */
+.hero-m, hero-md  { min-height:406px; }   /* medium */
+.hero-l, .hero-lg   { min-height:655px; }   /* large */
 
 
 /* Themes Background Colors & Colors 
