@@ -390,7 +390,7 @@ Children will go into the world with the necessary knowledge to problem solve an
 </a>
 
 
-
+<button type="button" data-toggle="modal" data-target="#exampleModal">Launch modal</button>
 
   
 
@@ -438,7 +438,25 @@ Children will go into the world with the necessary knowledge to problem solve an
   </div>
 </div>
 
-
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -462,6 +480,11 @@ Children will go into the world with the necessary knowledge to problem solve an
 
 <script type="text/javascript">
 
+$('#myModal').modal({
+  keyboard: false
+})
+	
+	
 $('.parallax-window').parallax({
     naturalWidth: 600,
     naturalHeight: 400
