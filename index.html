@@ -448,7 +448,148 @@ Children will go into the world with the necessary knowledge to problem solve an
         </button>
       </div>
       <div class="modal-body">
-        ...
+         <form method="post" action="" class="js-registratio py-5 px-3" accept-charset="UTF-8">
+
+
+
+	
+<h4 class="section-title my-5">Parent/Guardian</h4>
+	
+
+
+        
+
+            <div class="row py-2">
+
+              <div class="col">
+                <label for="firstName" class="font-weight-bold">First name</label>
+                <input id="firstName" type="text" name="message[Contact first name]" value="" class="form-control validate" required="">
+              </div>
+
+              <div class="col">
+                <label for="lastName" class="font-weight-bold">Last name</label>
+                <input id="lastName" type="text" name="message[Contact last name]" value="" class="form-control validate" required="">
+              </div>
+
+            </div>
+
+
+		<div class="form-group py-2">      
+			<label class="font-weight-bold" for="fromEmail" data-error="wrong" data-success="right">Email</label>            
+			<input id="fromEmail" type="email" name="fromEmail" value="" class="form-control validate" required="">
+              	</div>
+
+
+
+            <div class="form-group py-2">
+                <label for="Phone" class="font-weight-bold">Phone number</label>
+                <input class="form-control" type="tel" name="message[Phone number]" value="" id="Phone" required="">
+            </div>
+
+            <div class="form-group py-2">
+		      
+              <label class="font-weight-bold">Relationship with child</label>
+              
+            <select name="message[Relationship][]" id="relationship" class="input-large initialized form-control" required="" data-select-id="9557a7de-cc9a-f5c2-29e4-a0bca5a7fed9">
+                <option value="" disabled="" selected="">Please select...</option>
+                <option value="Mother">Mother</option>
+                <option value="Father">Father</option>
+                <option value="GrandMother">GrandMother</option>
+                <option value="GrandFather">GrandFather</option>
+                <option value="Guardian">Guardian</option>
+              </select>
+            </div>
+
+<input type="hidden" name="message[---]" value="-----------------------------------------------">
+
+
+
+<h3 class="section-title my-5">Child info</h3>
+	
+
+
+
+           <div class="row my-1 py-2">
+
+              <div class="col">
+                <label for="studentFirstName" class="font-weight-bold">Child's first name</label>
+                <input id="studentFirstName" type="text" name="message[Student's first name]" class="form-control validate" required="">
+              </div>
+
+              <div class="col">
+                <label for="studentLastName" class="font-weight-bold">Child's last name</label>
+                <input id="studentLastName" type="text" name="message[Student's last name]" class="form-control validate" required="">
+              </div>		   		
+	</div>
+
+           <div class="form-group py-2">
+
+                <label class="font-weight-bold" for="studentDOB">Child's date of birth</label>
+                <input id="studentDOB" type="text" name="message[Student date of birth]" value="" class="form-control js-datepicker validate hasDatepicker" required="">
+            </div>
+
+
+  
+
+            <div class="form-group py-2">
+              <label class="font-weight-bold">Child's gender</label> 
+	      
+	      <select class="form-control initialized" id="studentGender" name="message[Student's gender][]" data-select-id="f53941c0-89a8-b6bb-0f0c-4c157df46b44">
+                <option value="" disabled="" selected="">Please select...</option>
+                <option value="Female">Female</option>
+                <option value="Male">Male</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <input type="hidden" name="message[----]" value="-----------------------------------------------">
+
+
+	
+<h3 class="section-title my-5">More info</h3>
+
+
+	
+            <div class="form-group py-2">
+            <label class="font-weight-bold" for="startDate">When are you hoping to start?</label>
+            <input id="startDate" type="text" name="message[Suggested start date]" value="" class="form-control validate js-datepicker hasDatepicker" required="">
+            </div>
+
+
+           <div class="form-group py-2">
+            <label class="font-weight-bold">How did you hear about us ?</label>
+       
+	<select id="hear" name="message[How did you hear about us][]" data-select-id="62ddad9c-93bf-a431-1a36-2a95a15f0a59" class="form-control initialized">
+                <option value="" disabled="" selected="">Please select...</option>
+                <option value="Parent referal">Parent referral</option>
+                <option value="Internet search">Internet search</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Twitter">Twitter</option>
+                <option value="Our kids">Our kids</option>
+                <option value="Drive-by">Drive-by</option>
+                <option value="other">Other</option> 
+              </select>
+            </div>
+            
+
+            <input type="hidden" name="message[-----]" value="-----------------------------------------------">
+
+
+             <div class="form-group py-2">
+                <label class="font-weight-bold" for="comments">Comments</label>
+                <textarea cols="40" id="comments" name="message[Comments]" row="10" class="form-control materialize-textarea"></textarea>
+</div>
+
+
+ 
+
+
+<div class="form-group py-2">
+<button class="btn btn-primary btn-lg" type="submit">Submit Inquiry !</button>
+</div>
+
+
+</form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
