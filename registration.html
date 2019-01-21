@@ -202,7 +202,7 @@
             
 
 
-            <div class="input-field col s12">
+           <div class="form-group">
 
                 <label for="studentDOB">Child's date of birth</label>
                 <input id="studentDOB" type="text" name="message[Student date of birth]" value="" class="form-control js-datepicker validate hasDatepicker" required="">
@@ -211,19 +211,15 @@
 
           </div>
 
-            <div class="">
-              <label>Child's gender</label>
-              <div class="select-wrapper"><span class="caret">▼</span><input type="text" class="form-control select-dropdown" readonly="true" data-activates="select-options-f53941c0-89a8-b6bb-0f0c-4c157df46b44" value="Please select...">
-		      
-		      <ul id="select-options-f53941c0-89a8-b6bb-0f0c-4c157df46b44" class="dropdown-content select-dropdown "><li class="disabled "><span>Please select...</span></li><li class=""><span>Female</span></li><li class=""><span>Male</span></li><li class=""><span>Other</span></li></ul>
-	
-		      
-		      <select class="form-control initialized" id="studentGender" name="message[Student's gender][]" data-select-id="f53941c0-89a8-b6bb-0f0c-4c157df46b44">
+            <div class="form-group">
+              <label>Child's gender</label> 
+	      
+	      <select class="form-control initialized" id="studentGender" name="message[Student's gender][]" data-select-id="f53941c0-89a8-b6bb-0f0c-4c157df46b44">
                 <option value="" disabled="" selected="">Please select...</option>
                 <option value="Female">Female</option>
                 <option value="Male">Male</option>
                 <option value="Other">Other</option>
-              </select></div> 
+              </select>
             </div>
 
             <input type="hidden" name="message[----]" value="-----------------------------------------------">
@@ -238,18 +234,18 @@
 
 <div class="form-section-body">
 <div class="row">
-            <div class="input-field col s12">
+	
+            <div class="form-group">
             <i class="material-icons prefix">event_available</i> 
             <label for="startDate">When are you hoping to start?</label>
             <input id="startDate" type="text" name="message[Suggested start date]" value="" class="form-control validate js-datepicker hasDatepicker" required="">
             </div></div>
 
 
-            <div class="">
+           <div class="form-group">
             <label>How did you hear about us ?</label>
-              <div class="select-wrapper"><span class="caret">▼</span><input type="text" class="form-control select-dropdown" readonly="true" data-activates="select-options-62ddad9c-93bf-a431-1a36-2a95a15f0a59" value="Please select..."><ul id="select-options-62ddad9c-93bf-a431-1a36-2a95a15f0a59" class="dropdown-content select-dropdown "><li class="disabled "><span>Please select...</span></li><li class=""><span>Parent referral</span></li><li class=""><span>Internet search</span></li><li class=""><span>Facebook</span></li><li class=""><span>Twitter</span></li><li class=""><span>Our kids</span></li><li class=""><span>Drive-by</span></li><li class=""><span>Other</span></li></ul>
-		      
-		      <select id="hear" name="message[How did you hear about us][]" data-select-id="62ddad9c-93bf-a431-1a36-2a95a15f0a59" class="form-control initialized">
+       
+	<select id="hear" name="message[How did you hear about us][]" data-select-id="62ddad9c-93bf-a431-1a36-2a95a15f0a59" class="form-control initialized">
                 <option value="" disabled="" selected="">Please select...</option>
                 <option value="Parent referal">Parent referral</option>
                 <option value="Internet search">Internet search</option>
@@ -265,14 +261,12 @@
             <input type="hidden" name="message[-----]" value="-----------------------------------------------">
 
 
-
-            <div class="row">
-             <div class="input-field col s12">
+             <div class="form-group">
                 <i class="material-icons prefix">mode_edit</i>
                 <label for="comments">Comments</label>
                 <textarea cols="40" id="comments" name="message[Comments]" row="10" class="form-control materialize-textarea"></textarea>
 </div>
-</div>
+
 
         
 
