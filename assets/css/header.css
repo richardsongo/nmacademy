@@ -171,6 +171,14 @@ line-height: 64px;
 }
 
 
+.cbp-af-header .navbar-brand     {  display: flex; align-items: center; }
+.cbp-af-header .navbar-brand img {  width: 180px; height: auto; }
+
+@media screen and (min-width: 601px){
+.cbp-af-header .navbar-brand img {  width: 280px; height: auto; }
+}
+
+
 .cbp-af-header .logo-wrapper {
     width: 280px;
     height: 56px;
