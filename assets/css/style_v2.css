@@ -5,16 +5,9 @@ body, .text--body-base, .kss-example-preview-wrapper {
     font-weight: 400;
     color: #403b3b;
     -webkit-font-smoothing: antialiased;
-    padding-top:70px
 }
 
-@media (min-width: 767px){
 
-body {
-    padding-top:100px
-}
-    
-}
 
 
 h1, h2, h3, h4, h5, h6 {
