@@ -85,7 +85,18 @@ h6, .h6 {
     font-weight: 300;
 }
 
+.baner-1 {
+    padding-top:70px
+}
 
+
+@media (min-width: 767px){
+
+.baner-1 {
+    padding-top:100px
+}
+    
+}
 
 
 .margin-top74 {margin-top:56px;}
