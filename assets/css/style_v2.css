@@ -164,7 +164,14 @@ h6, .h6 {
 .hero-fp  { min-height:100%;  }   /* full page*/
 .hero-s, hero-sm   { height:320px; }   /* small */
 .hero-m, hero-md  { height:406px; }   /* medium */
-.hero-l, .hero-lg   { height:655px; }   /* large */
+.hero-l, .hero-lg   { /*height:655px;*/ }   /* large */
+
+
+.hero-banner {
+    overflow: hidden;
+    padding-bottom: 3.125rem;
+    padding-top: 7.5rem;
+}
 
 
 
