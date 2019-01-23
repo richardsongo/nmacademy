@@ -769,9 +769,7 @@ display:block;*
 }
 
 .image-composition img {
-  /*width: 8rem;
-  height: 8rem;*/
-/*  position:absolute;*/
+height: auto;
     
 }
 
@@ -782,7 +780,6 @@ display:block;*
 
 .image-composition .image-2 {
   width: 50%;
-  height: 50%;
  /* margin-top: -18rem;
   margin-left: 14rem;*/
 border: 6px solid white; 
@@ -795,14 +792,13 @@ width: 50%;
 
 .image-composition .image-3 {
   width: 30%;
-  height: 30%;
   /*margin-top: 10%;*/
   /*margin-left: 20%;*/
   border: 6px solid white;
   bottom: 3.75rem;
   display: block;
   position: absolute;
-  right: 2.75rem;  
+  right: 0;  
 }
 
 
