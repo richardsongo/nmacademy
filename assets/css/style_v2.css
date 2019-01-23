@@ -785,11 +785,11 @@ display:block;
   
   width: 12rem;
   height: 12rem;
-  margin-top: -18rem;
-  margin-left: 14rem;
+ /* margin-top: -18rem;
+  margin-left: 14rem;*/
   border: 6px solid white;
         
-    top:4em;
+    top:4rem;
     right:0;
     
 }
@@ -799,8 +799,8 @@ display:block;
   /*margin-top: -4rem;*/
   /*margin-left: 14em;*/
   border: 6px solid white;
-    bottom:4em;
-    right:4em;
+    bottom:4rem;
+    right:4rem;
 }
 
 
