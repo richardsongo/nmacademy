@@ -205,6 +205,7 @@ h6, .h6 {
     letter-spacing: 0;
 }
 
+
 @media screen and (min-width: 37.5em){
 .hero__lead {
     font-size: 2rem;
@@ -760,20 +761,25 @@ ol li a{color:#fff;}
 
 
 .image-composition {
-/*  width: 100%;
+  width: 100%;
   height: 100%;*/
-  /*border: 1px solid grey;*/
+display:block;
+    /*border: 1px solid grey;*/
+    position:relative;
 }
 
 .image-composition img {
   /*width: 8rem;
   height: 8rem;*/
-  
+  position:absolute;
+    
 }
 
 .image-composition .image-1{
   width: 16rem;
   height: 16rem;
+    top:0;
+    left:0;
 }
 .image-composition .image-2 {
   
@@ -782,13 +788,19 @@ ol li a{color:#fff;}
   margin-top: -18rem;
   margin-left: 14rem;
   border: 6px solid white;
+        
+    top:4em;
+    right:0;
+    
 }
 .image-composition .image-3 {
   width: 8rem;
   height: 8rem;
-  margin-top: -4rem;
-  margin-left: 14em;
+  /*margin-top: -4rem;*/
+  /*margin-left: 14em;*/
   border: 6px solid white;
+    bottom:4em;
+    right:4em;
 }
 
 
