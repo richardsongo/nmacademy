@@ -172,20 +172,25 @@ h6, .h6 {
     padding-bottom: 3.125rem;
     padding-top: 7.5rem;
 }
-
-
-
+ 
+    
 .hero__title {
      color: #241c15;
     font-family: 'Raleway', sans-serif;
     font-family: 'Rubik', sans-serif;
-    /*font-size: 2.5rem;*/
-    font-size: 3.81818vw !important;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: -.03125rem;
     line-height: 1;
 
 }
+
+@media screen and (min-width: 37.5em){
+.hero__title {
+    font-size: 3.81818vw;
+}
+}   
+
 
 .hero__lead {
      color: #241c15;
@@ -193,7 +198,17 @@ h6, .h6 {
     font-family: 'Rubik', sans-serif;
     font-weight: 300;
     /*line-height: 1.2;*/
+    font-size: 2rem;
+    letter-spacing: 0;
 }
+
+@media screen and (min-width: 37.5em){
+.hero__lead {
+    font-size: 2rem;
+    letter-spacing: 0;
+   }
+}
+
 
 
 
