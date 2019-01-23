@@ -785,26 +785,25 @@ display:block;
     top:0;
     left:0;
 }
+
 .image-composition .image-2 {
-  
   width: 12rem;
   height: 12rem;
  /* margin-top: -18rem;
   margin-left: 14rem;*/
   border: 6px solid white;
-     
-    top:2rem;
-    right:0;
-    
+  top:0;
+  right:0;
 }
+
 .image-composition .image-3 {
   width: 8rem;
   height: 8rem;
   /*margin-top: -4rem;*/
   /*margin-left: 14em;*/
   border: 6px solid white;
-    bottom:2rem;
-    right:2rem;
+  bottom:3rem;
+  right:3rem;
 }
 
 
