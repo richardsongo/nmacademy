@@ -375,7 +375,15 @@ iframe{
   
 	
 	
-<div style="background-color: #fbeeca;" class="section m-0 py-5 section-testimonials parallax-window bg-orange-pale" data-parallax="scroll" data-image-src="/nmacademy/boy-play.jpg">
+<div style="  /* Fallback for web browsers that don't support RGBa */
+    background-color: rgb(0, 0, 0);
+    /* RGBa with 0.6 opacity */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
+	    " class="section m-0 py-5 section-testimonials parallax-window bg-orange-pale" data-parallax="scroll" data-image-src="/nmacademy/boy-play.jpg">
 
 <div class="colorblock" style="background-color: #f8830b;"></div>
 	
