@@ -72,12 +72,12 @@
 <nav class="navbar navbar-light fixed-top navbar-expand-lg cbp-af-header">
     
   <a class="navbar-brand" href="/nmacademy"> <img src="/nmacademy/nm-logo-black.png" alt=""></a>
-    
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  
+  <button onclick="openNav()" class="navbar-toggler" type="button" ata-toggle="collapse" ata-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent-x">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -485,6 +485,26 @@ iframe{
 </footer>
 
 
+<!-- ................... -->
+
+
+<!-- The overlay -->
+<div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+
+</div>
+
+
 
 
 
@@ -531,6 +551,17 @@ iframe{
 
 <script type="text/javascript">
 
+/* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}	
+
+	
 $('#myModal').modal({
   keyboard: false
 })
