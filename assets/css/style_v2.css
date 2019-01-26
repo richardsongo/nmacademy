@@ -14,8 +14,9 @@ body, .text--body-base, .kss-example-preview-wrapper {
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     line-height: 1.1;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Raleway', sans-serif;
+    font-family: 'Rubik', sans-serif;*/
+    font-family: 'Englebert', sans-serif;
 }
 
 h1, .h1 {
@@ -56,6 +57,7 @@ h6, .h6 {
      color: #241c15;
     font-family: 'Raleway', sans-serif;
     font-family: 'Rubik', sans-serif;
+    font-family: 'Englebert', sans-serif;
     /*font-size: 2.5rem;*/
     font-weight: 300;
     letter-spacing: -.03125rem;
