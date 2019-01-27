@@ -416,7 +416,9 @@ footer a:hover {
 color: #007c89;
 }
 
-
+footer a.btn {
+color: #fff;
+}
 
 .section-title, .text-gradient {
   /*  background: -webkit-linear-gradient(right, yellow, #e51300);
