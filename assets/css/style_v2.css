@@ -406,10 +406,16 @@ footer.page-footer {
 footer .footer-inner {
 padding-bottom: 100px;
 padding-top: 100px;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif;
-
 }
+
+footer a {
+color: #403b3b;
+}
+
+footer a {
+color: #007c89;
+}
+
 
 
 .section-title, .text-gradient {
@@ -421,6 +427,7 @@ font-family: 'Open Sans', sans-serif;
     font-family: 'Permanent Marker', cursive;
     font-family: 'Englebert', sans-serif;*/
 }
+
 
 
 .carousel-item .carousel-content  { z-index: 10 !important; }
