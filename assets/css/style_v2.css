@@ -408,11 +408,11 @@ padding-bottom: 100px;
 padding-top: 100px;
 }
 
-footer a {
+footer a, footer a:link, footer a:active, footer a:visited {
 color: #403b3b;
 }
 
-footer a {
+footer a:hover {
 color: #007c89;
 }
 
