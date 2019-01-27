@@ -6,7 +6,7 @@
     background: transparent;
     z-index: 10000;
     height: calc(70px + 1px);
-    line-height: 70px;
+    /*line-height: 70px;*/
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     /*overflow: hidden;*/
     -webkit-transition: height 0.3s;
@@ -20,7 +20,7 @@
 @media screen and (min-width: 601px){
 .cbp-af-header {
   height: 100px;
-  line-height: 100px;
+  /*line-height: 100px;*/
 }
 }
 
