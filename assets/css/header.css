@@ -41,7 +41,7 @@
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
 .cbp-af-header ul li a {
-    line-height: 70px;
+   /* line-height: 70px;*/
 }
 
 .cbp-af-header ul li a {
