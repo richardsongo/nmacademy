@@ -45,22 +45,22 @@
 }
 
 .cbp-af-header ul li a {
-    color: #403b3b;
+    color: #241c15;
     font-weight: 300;
 }
 
 .cbp-af-header ul li a:hover {
-    color: #ed6000; color: #004e56;
+   /* color: #ed6000; color: #004e56;*/
 }
 
 /* Submenu */
 
 .cbp-af-header ul li .dropdown-content li a {
-    color: #403b3b;
+    color: #241c15;
 }
 
 .cbp-af-header ul li .dropdown-content li a:hover {
-    color: #ed6000;
+
 }
 
 
@@ -87,6 +87,7 @@
 
 .cbp-af-header.cbp-af-header-shrink ul li a {
     color: #333333;
+    color: #241c15;
 }
 
 
