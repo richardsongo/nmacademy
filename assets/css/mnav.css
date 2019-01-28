@@ -23,7 +23,7 @@
 }
 
 /* The navigation links inside the overlay */
-.m_overlay .nav-link {
+.m_overlay-content a {
   padding: 8px 0;
   text-decoration: none;
   font-size: 20px;
@@ -34,7 +34,7 @@
 }
 
 /* When you mouse over the navigation links, change their color */
-.m_overlay .nav-link:hover, .m_overlay .nav-link:focus {
+m_overlay-content a:hover, .m_overlay-content a:focus {
   color: #007c89;
 }
 
