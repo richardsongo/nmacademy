@@ -682,7 +682,7 @@ legend {
 
 .section-testimonials  .author {
     display: block;
-    color: #f15a22;
+    /*color: #f15a22;*/
     font-style: normal;
     padding-top: 32px;
     font-family: 'MyriadPro-Regular', sans-serif;
