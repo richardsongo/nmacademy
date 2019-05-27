@@ -55,3 +55,10 @@ m_overlay-content a:hover, .m_overlay-content a:focus {
     right: 35px;
   }*/
 }
+
+
+/* */
+.overlay-content ul      { list-style-type: none; }
+.overlay-content ul li   { border-bottom:1px #000 solid; padding: 20px 0;}
+.overlay-content ul li a { display:block }
+
