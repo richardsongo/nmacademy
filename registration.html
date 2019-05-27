@@ -55,7 +55,7 @@
     
     <a class="navbar-brand" href="/nmacademy"> <img src="/nmacademy/nm-logo-black.png" alt=""></a>
     
-    <button onclick="openNav()" class="navbar-toggler" type="button" ata-toggle="collapse" ata-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button onclick="openNav()" class="navbar-toggler openNav" type="button" ata-toggle="collapse" ata-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
@@ -399,5 +399,20 @@
 
 <script type="text/javascript" src="/nmacademy/assets/js/app.js"></script>
 
+<script type="text/javascript">
+
+
+$(".openNav").on({
+
+    click: function(){
+         document.getElementById("myNav").style.width = "100%";
+    } 
+
+});
+  
+
+</script>  	
+	
+	
 </body>
 </html>
